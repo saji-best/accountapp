@@ -1,0 +1,18 @@
+# coding: utf-8
+
+<h2>編集</h2>
+
+<%= form_for @account do |f| %>
+
+<P>名前： <%= f.text_field :name %><font color="red">*</font></P>
+<P>メールアドレス： <%= f.text_field :mailadd %><font color="red">*</font></P>
+<P>パスワード： <%= f.text_field :pass %><font color="red">*</font></P>
+<P>生年月日： <%= f.text_field :birthday %></P>
+<P>性別： <%= f.text_field :sex %></P>
+<P>メディア： <%= f.text_field :media %><font color="red">*</font></P>
+<P>使用： <%= f.check_box :used %></P>
+
+<p><font color="red">*</font> は必須項目です。<br><%= f.submit %></p>
+
+<% end %>
+

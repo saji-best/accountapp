@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  mailadd: MyString
+  pass: MyString
+  birthday: MyString
+  sex: MyString
+  media: MyString
+  used: false
+
+two:
+  name: MyString
+  mailadd: MyString
+  pass: MyString
+  birthday: MyString
+  sex: MyString
+  media: MyString
+  used: false
