@@ -12,7 +12,7 @@
 		<th align="left">生年月日</th>
 		<th align="left">性別</th>
 		<th align="left">メディア</th>
-		<th align="left">使用</th>
+		<th align="left">使用状況</th>
 	</tr>
 	
 	<% @accounts.each do |account| %>
@@ -25,7 +25,13 @@
 		<td><%= account.birthday %></td>
 		<td><%= account.sex %></td>
 		<td><%= account.media %></td>
-		<td><%= account.used %></td>
+		<td>
+			<% if account.used == true then %>
+			使用済み
+			<% else %>
+			未使用
+			<% end %>
+		</td>
 	</tr>
 	<% end %>
 </table>
