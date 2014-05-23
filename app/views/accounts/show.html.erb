@@ -6,13 +6,13 @@
 
 <table cellpadding="2" cellspacing="0" border="0">
 <tr><td colspan="2"><hr></td></tr>
-<tr><td>名前： </td><td><%= @account.name %></td></tr>
-<tr><td>メールアドレス： </td><td><%= @account.mailadd %></td><tr>
-<tr><td>パスワード： </td><td><%= @account.pass %></td></tr>
-<tr><td>生年月日： </td><td><%= @account.birthday %></td></tr>
-<tr><td>性別： </td><td><%= @account.sex %></td></tr>
-<tr><td>メディア： </td><td><%= @account.media %></td></tr>
-<tr><td>使用状況： </td><td><%= @account.used %>
+<tr><td>名前</td><td>： <%= @account.name %></td></tr>
+<tr><td>メールアドレス</td><td>： <%= @account.mailadd %></td><tr>
+<tr><td>パスワード</td><td>： <%= @account.pass %></td></tr>
+<tr><td>生年月日</td><td>： <%= @account.birthday %></td></tr>
+<tr><td>性別</td><td>： <%= @account.sex %></td></tr>
+<tr><td>メディア</td><td>： <%= @account.media %></td></tr>
+<tr><td>使用状況</td><td>： 
 	<% if @account.used == true then %>
 	使用中
 	<% else %>
